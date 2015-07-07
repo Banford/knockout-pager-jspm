@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>SystemJS + KnockoutJS</title>
+</head>
+<body>
+  <h1>SystemJS + KnockoutJS</h1>
+
+  <p>
+    First Name: <span data-bind="text: firstName"></span>
+  </p>
+
+  <input type="text" data-bind="value: firstName" />
+
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+  System.import('src/main');
+</script>
+</body>
+</html>
